@@ -64,3 +64,12 @@ err_est <- optim(par = inits,
 
 cv_matrix <- solve(err_est$hessian)
 sqrt(diag(cv_matrix))[1:4]
+
+
+## Exercise 4 
+
+fit <- lm(y ~., data= df)
+fit$coefficients
+fit$residuals
+summary(fit)
+
